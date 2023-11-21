@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Marking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="checkbox"] {
+      size-adjust: 30px;
+      margin-right: 5px;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Attendance Marking</h1>
+  </header>
+
+  <main>
+    <form>
+      <label for="week">Week:</label>
+      <select id="week" name="week">
+        <option value="1">Week 1</option>
+        <!-- Add more weeks as needed -->
+      </select>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>Student 1</td>
+            <td><input type="checkbox" name="student1_monday"></td>
+            <td><input type="checkbox" name="student1_tuesday"></td>
+            <td><input type="checkbox" name="student1_wednesday"></td>
+            <td><input type="checkbox" name="student1_thursday"></td>
+            <td><input type="checkbox" name="student1_friday"></td>
+          </tr>
+          <tr>
+            <td>Student 2</td>
+            <td><input type="checkbox" name="student2_monday"></td>
+            <td><input type="checkbox" name="student2_tuesday"></td>
+            <td><input type="checkbox" name="student2_wednesday"></td>
+            <td><input type="checkbox" name="student2_thursday"></td>
+            <td><input type="checkbox" name="student2_friday"></td>
+          </tr>
+          <tr>
+            <td>Student 3</td>
+            <td><input type="checkbox" name="student3_monday"></td>
+            <td><input type="checkbox" name="student3_tuesday"></td>
+            <td><input type="checkbox" name="student3_wednesday"></td>
+            <td><input type="checkbox" name="student3_thursday"></td>
+            <td><input type="checkbox" name="student3_friday"></td>
+          </tr>
+          <tr>
+            <td>Student 4</td>
+            <td><input type="checkbox" name="student4_monday"></td>
+            <td><input type="checkbox" name="student4_tuesday"></td>
+            <td><input type="checkbox" name="student4_wednesday"></td>
+            <td><input type="checkbox" name="student4_thursday"></td>
+            <td><input type="checkbox" name="student4_friday"></td>
+          </tr>
+          <tr>
+            <td>Student 5</td>
+            <td><input type="checkbox" name="student5_monday"></td>
+            <td><input type="checkbox" name="student5_tuesday"></td>
+            <td><input type="checkbox" name="student5_wednesday"></td>
+            <td><input type="checkbox" name="student5_thursday"></td>
+            <td><input type="checkbox" name="student5_friday"></td>
+          </tr>
+          <tr>
+            <td>Student 6</td>
+            <td><input type="checkbox" name="student1_monday"></td>
+            <td><input type="checkbox" name="student1_tuesday"></td>
+            <td><input type="checkbox" name="student1_wednesday"></td>
+            <td><input type="checkbox" name="student1_thursday"></td>
+            <td><input type="checkbox" name="student1_friday"></td>
+          </tr>
+          <tr>
+            <td>Student 7</td>
+            <td><input type="checkbox" name="student1_monday"></td>
+            <td><input type="checkbox" name="student1_tuesday"></td>
+            <td><input type="checkbox" name="student1_wednesday"></td>
+            <td><input type="checkbox" name="student1_thursday"></td>
+            <td><input type="checkbox" name="student1_friday"></td>
+          </tr>
+          <tr>
+            <td>Student 8</td>
+            <td><input type="checkbox" name="student1_monday"></td>
+            <td><input type="checkbox" name="student1_tuesday"></td>
+            <td><input type="checkbox" name="student1_wednesday"></td>
+            <td><input type="checkbox" name="student1_thursday"></td>
+            <td><input type="checkbox" name="student1_friday"></td>
+          </tr>
+          <tr>
+            <td>Student 9</td>
+            <td><input type="checkbox" name="student1_monday"></td>
+            <td><input type="checkbox" name="student1_tuesday"></td>
+            <td><input type="checkbox" name="student1_wednesday"></td>
+            <td><input type="checkbox" name="student1_thursday"></td>
+            <td><input type="checkbox" name="student1_friday"></td>
+          </tr>
+          <tr>
+            <td>Student 10</td>
+            <td><input type="checkbox" name="student1_monday"></td>
+            <td><input type="checkbox" name="student1_tuesday"></td>
+            <td><input type="checkbox" name="student1_wednesday"></td>
+            <td><input type="checkbox" name="student1_thursday"></td>
+            <td><input type="checkbox" name="student1_friday"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button type="submit">Submit Attendance</button>
+    </form>
+  </main>
+
+</body>
+</html>
